@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO01_JAVA-SCRIPT 11-10</title>
+</head>
+<body>
+    <h1>TRABALHANDO COM DADOS</h1>
+
+
+        <!--PROPRIEDADE onclick do botão que atribui uma intenção a função-->
+        <button onclick="INTERACAO_CLICAR()">CLIQUE AQUI</button>
+
+        <hr>
+        <br>
+        <h2>SEGUNDO BOTÃO</h2>
+
+        <button onclick="INTERACAO_SEGUNDO_BOTAO_DADOS_USUARIO()">CLIQUE AQUI PARA COMEÇAR</button>
+
+        <script> //criação de uma função
+            function INTERACAO_CLICAR(){
+                window.alert('CLICOU NO BOTÃO!!')
+            }
+            function INTERACAO_SEGUNDO_BOTAO_DADOS_USUARIO(){
+                //tipos de variaveis : VAR, LET, CONST "APENAS ESSAS 3 VARIAVEIS"
+                //JAVA E PYTHON : INT,DOUBLE, STRING
+
+                let nome = 'JHOE' //reconhecimento de VARIAVEL nome do tipo string
+                let idade = 35 //reconhecimento direto da variavel como int
+
+                //usuario digitar o nome
+                let nomeDigitado= window.prompt('Qual é seu nome?')
+
+                //2 formas para ver execução prompt pode ser window.prompt 
+
+                //forma de manipular variavel de texto: template strings
+                alert(`Nome Digitado: ${nomeDigitado}`) //fecha a caixa e retorna o valor nome digitado, através de um alerta
+           
+                
+                //forma de manipular variavel com texto
+                alert('Olá,' + nomeDigitado + 'É um prazer te conhecer')
+            }
+            
+        </script>
+
+</body>
+</html>

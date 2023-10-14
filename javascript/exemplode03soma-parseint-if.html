@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 03_JAVA-SCRIPT 11-10</title>
+</head>
+<body>
+
+    <h1>EXEMPLO 03 SOMA PARSE_CONVERTE/SOMA</h1>
+
+    <button onclick="somaValores()">CLIQUE AQUI PARA COMEÇAR</button>
+
+    <script>
+        let numero01 = 10   //declarando as variaveis
+        let numero02 = 20
+
+        let somaNumeros= numero01 + numero02
+
+        //exibindo a soma no console do navegador em "Inspecionar"
+        console.log('A soma dos valores é' + somaNumeros)
+
+        function somaValores(){
+            let numero01Digitado = prompt('Digite o primeiro valor:')
+            let numero02Digitado = prompt('Digite o segundo valor:')
+
+            let somaNumeros = parseInt(numero01Digitado) + parseInt(numero02Digitado) //parseIntConverte os números em inteiros para fazer a soma e não concatena
+
+            alert('A soma dos número é: ' + somaNumeros)
+        }
+
+        if (somaNumeros > 30){
+            console.log('Você é maior!')
+        }
+
+        else{
+            console.log('Você é menor')
+        }
+    </script>
+    
+</body>
+</html>
